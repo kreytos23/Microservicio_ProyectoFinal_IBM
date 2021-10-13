@@ -14,7 +14,7 @@ Repositorio de los microservicios desarrollados como parte del Proyecto Final de
 	8.- En el body de la peticion coloca en formato JSON los datos a probar <br/>
 		<p align="center">
 			Ejemplo de Body: <br/>
-				<p>
+				<p align="left">
 					{ <br/>
 					   "activity": "My style", <br/>
 					   "age": 55, <br/>
