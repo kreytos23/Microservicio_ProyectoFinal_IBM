@@ -1,0 +1,12 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kreytos23/SpringCloudIBM_ConfigServer_Tarjetas
+
+profiles:
+  active: development
