@@ -14,11 +14,13 @@ Repositorio de los microservicios desarrollados como parte del Proyecto Final de
 	8.- En el body de la peticion coloca en formato JSON los datos a probar <br/>
 		<p align="center">
 			Ejemplo de Body: <br/>
-				{ <br/>
-				   "activity": "My style", <br/>
-				   "age": 55, <br/>
-				   "salary": 20000 <br/>
-				} <br/>
+				<p>
+					{ <br/>
+					   "activity": "My style", <br/>
+					   "age": 55, <br/>
+					   "salary": 20000 <br/>
+					} <br/>
+				</p>	
 		</p>
 	9.- Realiza la petición y listo. <br/>
 
