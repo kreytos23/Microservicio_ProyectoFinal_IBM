@@ -3,7 +3,7 @@ Repositorio de los microservicios desarrollados como parte del Proyecto Final de
 
 # Para la API de Tarjetas de Credito
  
- Se encuetra en la carpeta \API_Tarjetas
+ Se encuetra en la carpeta API_Tarjetas
 	1.- Abre la carpeta EurekaServer y abre el proyecto en tu IDE <br/>
 	2.- Ejecuta la clase con el metodo main, espera hasta que haya cargado en la consola el mensaje "Aplication Initialized" <br/>
 	3.- En tu navegador ya estará dispoible la consola de Eureka en http://localhost:8761 <br/>
@@ -13,11 +13,11 @@ Repositorio de los microservicios desarrollados como parte del Proyecto Final de
 	7.- Ahora abre Postman, crea una peticion GET con el url http://localhost:8899/Banamex/API/cards/cardOption <br/>
 	8.- En el body de la peticion coloca en formato JSON los datos a probar <br/>
 	
-	Ejemplo de Body: <br/>
-		<p align="center">
-			<img alt="APITarjetas" src="./ReadmeImages/RequestTarjeta.PNG"/>
-		</p>	
-	
+Ejemplo de Body: <br/>
+	<p align="center">
+		<img alt="APITarjetas" src="./ReadmeImages/RequestTarjeta.PNG"/>
+	</p>	
+
 	9.- Realiza la petición y listo. <br/>
 
 	
