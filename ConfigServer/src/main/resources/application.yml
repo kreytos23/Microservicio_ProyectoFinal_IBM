@@ -8,5 +8,4 @@ spring:
         git:
           uri: https://github.com/kreytos23/SpringCloudIBM_ConfigServer_Tarjetas
 
-profiles:
-  active: development
+
