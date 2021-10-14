@@ -14,7 +14,7 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
     @ExceptionHandler(NotMatchCard.class)
     public final ResponseEntity<ExceptionResponse> handleNotFoundException(NotMatchCard ex, WebRequest request) {
         ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), ex.getMessage(),
-                request.getDescription(false), HttpStatus.NO_CONTENT.getReasonPhrase());
-        return new ResponseEntity<ExceptionResponse>(exceptionResponse, HttpStatus.NO_CONTENT);
+                request.getDescription(false), HttpStatus.NOT_ACCEPTABLE.getReasonPhrase());
+        return new ResponseEntity<ExceptionResponse>(exceptionResponse, HttpStatus.NOT_ACCEPTABLE);
     }
 }

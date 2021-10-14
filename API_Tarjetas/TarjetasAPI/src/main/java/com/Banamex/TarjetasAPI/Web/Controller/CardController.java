@@ -25,7 +25,7 @@ public class CardController {
         if(!responseList.isEmpty()){
             return new ResponseEntity<>(responseList, HttpStatus.OK);
         }else{
-            throw new NotMatchCard("Lo siento, no calificas a niguna tarjeta");
+            throw new NotMatchCard("Lo siento, no calificas a ninguna tarjeta");
         }
     }
 }
