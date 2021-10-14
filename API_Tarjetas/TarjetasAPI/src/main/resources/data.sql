@@ -1,4 +1,4 @@
- INSERT INTO activity (activity_name) VALUES ('Shopping'),
+ INSERT INTO passion (passion_name) VALUES ('Shopping'),
   ('Travels'),
   ('Help'),
   ('My business'),
@@ -30,7 +30,7 @@
   (23, 75),
   (18, 32);
 
-  INSERT INTO tarjeta (nombre_tarjeta, id_edad, id_actividad, id_salary)
+  INSERT INTO tarjeta (nombre_tarjeta, id_edad, id_passion, id_salary)
   VALUES
   ('B Smart',1,1,1), ('Afinity Card',1,1,1),
 

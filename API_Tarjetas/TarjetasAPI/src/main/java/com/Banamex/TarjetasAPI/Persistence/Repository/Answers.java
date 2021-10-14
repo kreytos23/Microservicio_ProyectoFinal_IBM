@@ -5,30 +5,30 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 public class Answers {
-    @NotNull(message = "No puede estar vacia la Actvidad")
-    @NotBlank(message = "No puede estar vacia la Actvidad")
-    private String activity;
+    @NotNull(message = "Your passion cannot be empty")
+    @NotBlank(message = "Your passion cannot be empty")
+    private String passion;
 
-    @NotNull(message = "No puede estar vacia la Edad")
-    @Min(value = 18, message = "Debes ser mayor de edad")
+    @NotNull(message = "Your age cannot be empty")
+    @Min(value = 18, message = "You must be over 18 years old")
     private Integer age;
 
-    @NotNull(message = "No puede estar vacio el Salario")
-    @Min(value = 7000, message = "Debes tener un ingreso mayor a 6999")
+    @NotNull(message = "Your salary cannot be empty")
+    @Min(value = 7000, message = "You must have a salary greater than $7,000")
     private Integer salary;
 
-    public Answers(String activity, Integer edad, Integer salary) {
-        this.activity = activity;
+    public Answers(String passion, Integer edad, Integer salary) {
+        this.passion = passion;
         this.age = edad;
         this.salary = salary;
     }
 
-    public String getActivity() {
-        return activity;
+    public String getPassion() {
+        return passion;
     }
 
-    public void setActivity(String activity) {
-        this.activity = activity;
+    public void setPassion(String passion) {
+        this.passion = passion;
     }
 
     public Integer getAge() {

@@ -20,9 +20,9 @@ public class Card {
     @JsonIgnore
     private Integer idAge;
 
-    @Column(name = "id_actividad")
+    @Column(name = "id_passion")
     @JsonIgnore
-    private Integer idActivity;
+    private Integer idPassion;
 
     @Column(name = "id_salary")
     @JsonIgnore
@@ -30,8 +30,8 @@ public class Card {
 
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "id_actividad", insertable = false,updatable = false)
-    private Activity activity;
+    @JoinColumn(name = "id_passion", insertable = false,updatable = false)
+    private Passion passion;
 
     @JsonIgnore
     @ManyToOne
@@ -67,12 +67,12 @@ public class Card {
         this.idAge = idAge;
     }
 
-    public Integer getIdActivity() {
-        return idActivity;
+    public Integer getIdPassion() {
+        return idPassion;
     }
 
-    public void setIdActivity(Integer idActivity) {
-        this.idActivity = idActivity;
+    public void setIdPassion(Integer idPassion) {
+        this.idPassion = idPassion;
     }
 
     public Integer getIdSalary() {
@@ -83,12 +83,12 @@ public class Card {
         this.idSalary = idSalary;
     }
 
-    public Activity getActivity() {
-        return activity;
+    public Passion getPassion() {
+        return passion;
     }
 
-    public void setActivity(Activity activity) {
-        this.activity = activity;
+    public void setPassion(Passion passion) {
+        this.passion = passion;
     }
 
     public Age getAge() {

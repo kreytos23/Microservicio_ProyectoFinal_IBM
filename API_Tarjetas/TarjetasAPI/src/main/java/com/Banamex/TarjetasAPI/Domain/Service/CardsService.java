@@ -17,7 +17,7 @@ public class CardsService implements CardsServiceInter{
     @Override
     public List<Card> getCardsService(Answers answers){
         return  cardsCrudRepository.getCards(
-                answers.getActivity(),answers.getAge(),answers.getAge(),
+                answers.getPassion(),answers.getAge(),answers.getAge(),
                 answers.getSalary(),answers.getSalary());
     }
 }
