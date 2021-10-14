@@ -3,6 +3,7 @@ package com.Banamex.TarjetasAPI.Web.Controller;
 import com.Banamex.TarjetasAPI.Domain.Service.CardsServiceInter;
 import com.Banamex.TarjetasAPI.Persistence.Repository.Answers;
 import com.Banamex.TarjetasAPI.Persistence.Entity.Card;
+import com.Banamex.TarjetasAPI.Web.ExceptionHandler.NotMatchCard;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +21,11 @@ public class CardController {
 
     @GetMapping("/cardOption")
     public ResponseEntity<List<Card>> saludo(@RequestBody @Valid Answers answers){
-        return new ResponseEntity<>(cardsServiceInter.getCardsService(answers), HttpStatus.OK);
+        List<Card> responseList = cardsServiceInter.getCardsService(answers);
+        if(!responseList.isEmpty()){
+            return new ResponseEntity<>(responseList, HttpStatus.OK);
+        }else{
+            throw new NotMatchCard("Lo siento, no calificas a niguna tarjeta");
+        }
     }
 }
