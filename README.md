@@ -6,6 +6,7 @@ Repositorio de los microservicios desarrollados como parte del Proyecto Final de
 
 # API de Tarjetas de Credito
 ----
+Esta API se encarga de mandar el tipo de tarjeta de credito más optima para el perfil del usuario que la solicite, por medio de parámetros como su Pasión, su ingreso mensual y su edad.
 
 #### Pasos a seguir
                 
