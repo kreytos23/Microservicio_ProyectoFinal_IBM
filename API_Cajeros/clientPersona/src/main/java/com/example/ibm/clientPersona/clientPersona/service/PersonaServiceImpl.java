@@ -54,6 +54,7 @@ public class PersonaServiceImpl implements PersonaService{
 							Horario = AuxHorario1 + " - " + AuxHorario2;
 							aux = new SucursalesEncontradas(AuxTipoSucursal, AuxDireccion, AuxEntreCalles, Horario, ID);
 							sucursales.add(aux);
+
 						}
 					}catch(NullPointerException | JSONException nullPointer  ){
 						continue;
