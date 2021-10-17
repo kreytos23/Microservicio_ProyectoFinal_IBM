@@ -6,8 +6,9 @@ Repositorio de los microservicios desarrollados como parte del Proyecto Final de
 
 # API de Tarjetas de Credito
 ----
+Esta API se encarga de mandar el tipo de tarjeta de credito más optima para el perfil del usuario que la solicite, por medio de parámetros como su Pasión, su ingreso mensual y su edad.
 
-####Pasos a seguir
+#### Pasos a seguir
                 
 1. Abre la carpeta EurekaServer y abre el proyecto en tu IDE
 2. Ejecuta la clase con el metodo main, espera hasta que haya cargado en la consola el mensaje "Aplication Initialized"
@@ -19,9 +20,9 @@ Repositorio de los microservicios desarrollados como parte del Proyecto Final de
 8. En el body de la peticion coloca en formato JSON los datos a probar
                 
 
-###Ejemplo  de petición en Postman
+### Ejemplo  de petición en Postman
 
-![](./ReadmeImages/RequestTarjeta.PNG)
+![](./ReadmeImages/NuevoRequest.PNG)
 
 > Peticion GET a API
 
