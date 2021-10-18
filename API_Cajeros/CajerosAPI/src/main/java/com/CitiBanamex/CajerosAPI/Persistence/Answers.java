@@ -1,15 +1,23 @@
 package com.CitiBanamex.CajerosAPI.Persistence;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 public class Answers {
-    //Indice 15
+    @NotNull(message = "Your Latitude cannot be empty")
+    @NotBlank(message = "Your Latitude cannot be empty")
     private String GPS1;
-    //Indice 16
+    @NotNull(message = "Your Longitude cannot be empty")
+    @NotBlank(message = "Your Longitude cannot be empty")
     private String GPS2;
-    //Indice 4
+    @NotNull(message = "Your CP cannot be empty")
+    @NotBlank(message = "Your CP cannot be empty")
     private String CP;
-    //Indice 17
+    @NotNull(message = "Your State cannot be empty")
+    @NotBlank(message = "Your State cannot be empty")
     private String Estado;
-    //Indice 2
+    @NotNull(message = "Your town cannot be empty")
+    @NotBlank(message = "Your town cannot be empty")
     private String Delegacion;
 
     public Answers(String GPS1, String GPS2, String CP, String Estado, String Delegacion) {
