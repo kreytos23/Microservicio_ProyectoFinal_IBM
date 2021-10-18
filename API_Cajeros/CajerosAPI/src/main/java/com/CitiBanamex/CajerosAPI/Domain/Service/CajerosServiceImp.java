@@ -31,7 +31,7 @@ public class CajerosServiceImp implements CajerosServiceInt{
 
         try {
             JSONObject jsonObject = new JSONObject(json);
-            JSONObject raiz = jsonObject.getJSONObject("Servicios");
+            JSONObject raiz = jsonObject.getJSONObject(JSONConstants.RAIZ);
 
             for (int x = 0; x < JSONConstants.DIVISION1.length; x++) {
                 for (int y = 0; y < JSONConstants.DIVISION2.length; y++) {
@@ -102,7 +102,7 @@ public class CajerosServiceImp implements CajerosServiceInt{
     }
 
     public String obtenerCP(String direccion){
-        int cpIndex = direccion.indexOf("C.P.");
+        int cpIndex = direccion.indexOf(JSONConstants.CP);
         String AuxCP;
         AuxCP = direccion.substring(cpIndex + 5, cpIndex + 10);
         return AuxCP;
