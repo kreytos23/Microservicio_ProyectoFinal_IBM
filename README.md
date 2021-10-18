@@ -27,6 +27,8 @@ Esta API se encarga de mandar el tipo de tarjeta de credito más optima para el 
 > Peticion GET a API
 
 
+<br/>
+
 # API de ATM y Sucursales
 ----
 Esta API se encarga de obtener los ATM y Sucursales citiBanamex por medio de los paramétros de GPS, C.P, Estado, Delegación/Municipio. 
